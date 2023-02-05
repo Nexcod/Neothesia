@@ -27,7 +27,7 @@ impl TextRenderer {
     pub fn queue_fps(&mut self, fps: f64) {
         let s = format!("FPS: {}", fps.round() as u32);
         let text = vec![wgpu_glyph::Text::new(&s)
-            .with_color([1.0, 1.0, 1.0, 1.0])
+            .with_color([0.0, 0.0, 0.0, 1.0])
             .with_scale(20.0)];
 
         self.queue_text(Section {

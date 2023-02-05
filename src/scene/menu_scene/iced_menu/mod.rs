@@ -260,7 +260,7 @@ impl<'a> Step {
     }
 
     fn exit() -> Element<'a, Message> {
-        let output = centered_text("Do you want to exit?").size(30);
+        let output = centered_text("Вы хотите закрыть программу?").size(30);
 
         let select_row = row![
             neo_button("No")
@@ -283,15 +283,15 @@ impl<'a> Step {
 
     fn main(data: &'a Data) -> Element<'a, Message> {
         let buttons = col![
-            neo_button("Select File")
+            neo_button("Выбор MIDI файла")
                 .on_press(Message::OpenMidiFilePicker)
                 .width(Length::Fill)
                 .height(Length::Units(80)),
-            neo_button("Settings")
+            neo_button("Настройки")
                 .on_press(Message::GoToPage(Step::Settings))
                 .width(Length::Fill)
                 .height(Length::Units(80)),
-            neo_button("Exit")
+            neo_button("Выход")
                 .on_press(Message::GoToPage(Step::Exit))
                 .width(Length::Fill)
                 .height(Length::Units(80))
@@ -344,7 +344,7 @@ impl<'a> Step {
             .width(Length::Fill)
             .style(theme::pick_list());
 
-        let output_title = text("Output:")
+        let output_title = text("Устройство вывода:")
             .vertical_alignment(Vertical::Center)
             .height(Length::Units(30));
 
