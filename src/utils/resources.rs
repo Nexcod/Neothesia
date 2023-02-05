@@ -20,14 +20,11 @@ pub fn default_sf2() -> Option<PathBuf> {
         if let Some(path) = xdg_config().map(|p| p.join("default.sf2")) {
             if path.exists() {
                 return Some(path);
+            } else {
+                return None;
             }
-        }
-
-        let flatpak = PathBuf::from("/app/share/neothesia/default.sf2");
-        if flatpak.exists() {
-            Some(flatpak)
         } else {
-            None
+            return None;
         }
     }
 
