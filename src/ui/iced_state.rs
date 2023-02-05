@@ -139,7 +139,7 @@ where
                 &mut target.iced_manager.renderer,
                 &iced_wgpu::Theme::Dark,
                 &iced_native::renderer::Style {
-                    text_color: Color::WHITE,
+                    text_color: Color::BLACK,
                 },
                 cursor_position,
             );
@@ -169,7 +169,7 @@ where
                 &mut target.iced_manager.renderer,
                 &iced_wgpu::Theme::Dark,
                 &iced_native::renderer::Style {
-                    text_color: Color::WHITE,
+                    text_color: Color::BLACK,
                 },
                 cursor_position,
             );
