@@ -20,9 +20,9 @@ impl iced_style::pick_list::StyleSheet for PickListStyle {
 
     fn active(&self, _style: &Self::Style) -> pick_list::Appearance {
         pick_list::Appearance {
-            text_color: Color::WHITE,
-            background: iced_graphics::Background::Color(Color::BLACK),
-            placeholder_color: Color::WHITE,
+            text_color: Color::BLACK,
+            background: iced_graphics::Background::Color(Color::WHITE),
+            placeholder_color: Color::BLACK,
             border_radius: 2.0,
             border_width: 1.0,
             border_color: SURFACE,
@@ -33,10 +33,10 @@ impl iced_style::pick_list::StyleSheet for PickListStyle {
     fn hovered(&self, _style: &Self::Style) -> pick_list::Appearance {
         let accent = Color::from_rgba8(160, 81, 255, 1.0);
         pick_list::Appearance {
-            text_color: Color::WHITE,
-            background: iced_graphics::Background::Color(Color::BLACK),
+            text_color: Color::BLACK,
+            background: iced_graphics::Background::Color(Color::WHITE),
             // background: iced_graphics::Background::Color(Color::from_rgb8(42, 42, 42)),
-            placeholder_color: Color::WHITE,
+            placeholder_color: Color::BLACK,
             border_radius: 2.0,
             border_width: 1.0,
             // border_color: Color::from_rgb8(42, 42, 42),
@@ -109,8 +109,8 @@ impl iced_style::checkbox::StyleSheet for CheckboxStyle {
         let active = Color::from_rgba8(160, 81, 255, 1.0);
         iced_style::checkbox::Appearance {
             background: if is_checked { active } else { SURFACE }.into(),
-            text_color: Some(Color::WHITE),
-            checkmark_color: Color::WHITE,
+            text_color: Some(Color::BLACK),
+            checkmark_color: Color::BLACK,
             border_radius: 2.0,
             border_width: 1.0,
             border_color: active,
