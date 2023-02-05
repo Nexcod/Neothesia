@@ -52,10 +52,10 @@ impl iced_style::menu::StyleSheet for MenuStyle {
     type Style = iced_style::Theme;
 
     fn appearance(&self, _style: &Self::Style) -> iced_style::menu::Appearance {
-        let accent = Color::from_rgba8(160, 81, 255, 1.0);
+        let accent = Color::from_rgba8(71, 123, 255, 1.0);
         iced_style::menu::Appearance {
-            text_color: Color::WHITE,
-            background: iced_graphics::Background::Color(Color::BLACK),
+            text_color: Color::BLACK,
+            background: iced_graphics::Background::Color(Color::WHITE),
             border_width: 1.0,
             border_radius: 0.0,
             border_color: SURFACE,
