@@ -61,13 +61,13 @@ midir = "0.8"
 
 fps_ticker = "1.0"
 
-iced_native = { git = "https://github.com/iced-rs/iced.git", rev = "da244ff8048e0b339c1502372894a2460a637241", optional = true }
-iced_wgpu = { git = "https://github.com/iced-rs/iced.git", rev = "da244ff8048e0b339c1502372894a2460a637241", features = [
+iced_native = { git = "https://github.com/Nexcod/iced.git", rev = "8957d076559a3891b82ca0ffe44744d7a767208a", optional = true }
+iced_wgpu = { git = "https://github.com/Nexcod/iced.git", rev = "8957d076559a3891b82ca0ffe44744d7a767208a", features = [
     "png",
     "image",
 ], optional = true }
-iced_graphics = { git = "https://github.com/iced-rs/iced.git", rev = "da244ff8048e0b339c1502372894a2460a637241", optional = true }
-iced_style = { git = "https://github.com/iced-rs/iced.git", rev = "da244ff8048e0b339c1502372894a2460a637241", optional = true }
+iced_graphics = { git = "https://github.com/Nexcod/iced.git", rev = "8957d076559a3891b82ca0ffe44744d7a767208a", optional = true }
+iced_style = { git = "https://github.com/Nexcod/iced.git", rev = "8957d076559a3891b82ca0ffe44744d7a767208a", optional = true }
 
 cpal = { version = "0.14", optional = true }
 fluidlite = { version = "0.2", features = ["builtin"], optional = true }

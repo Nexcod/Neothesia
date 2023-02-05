@@ -252,7 +252,7 @@ impl<'a> Step {
     }
 
     fn loading(data: &'a Data) -> Element<'a, Message> {
-        let column = col![image(data.logo_handle.clone()), text("Loading...").size(30)]
+        let column = col![image(data.logo_handle.clone()), text("Загрузка...").size(30)]
             .spacing(40)
             .align_items(Alignment::Center);
 
@@ -263,10 +263,10 @@ impl<'a> Step {
         let output = centered_text("Вы хотите закрыть программу?").size(30);
 
         let select_row = row![
-            neo_button("No")
+            neo_button("Нет")
                 .width(Length::Fill)
                 .on_press(Message::GoToPage(Step::Main)),
-            neo_button("Yes")
+            neo_button("Да")
                 .width(Length::Fill)
                 .on_press(Message::ExitApp),
         ]
@@ -283,7 +283,7 @@ impl<'a> Step {
 
     fn main(data: &'a Data) -> Element<'a, Message> {
         let buttons = col![
-            neo_button("Выбор MIDI файла")
+            neo_button("Выбрать MIDI файл")
                 .on_press(Message::OpenMidiFilePicker)
                 .width(Length::Fill)
                 .height(Length::Units(80)),
@@ -306,10 +306,10 @@ impl<'a> Step {
         let mut content = top_padded(column);
 
         if data.midi_file.is_some() {
-            let play_along = checkbox("PlayAlong", data.play_along, Message::PlayAlongCheckbox)
+            let play_along = checkbox("Ожидание нажатия", data.play_along, Message::PlayAlongCheckbox)
                 .style(theme::checkbox());
 
-            let play = neo_button("Play")
+            let play = neo_button("Играть")
                 .height(Length::Units(60))
                 .min_width(80)
                 .on_press(Message::Play);
@@ -371,17 +371,17 @@ impl<'a> Step {
             .width(Length::Fill)
             .style(theme::pick_list());
 
-        let input_title = text("Input:")
+        let input_title = text("Устройство ввода:")
             .vertical_alignment(Vertical::Center)
             .height(Length::Units(30));
 
         let input_list = row![
-            input_title.width(Length::Units(60)),
+            input_title.width(Length::Units(150)),
             input_list.width(Length::FillPortion(3)),
         ]
         .spacing(10);
 
-        let buttons = row![neo_button("Back")
+        let buttons = row![neo_button("Назад")
             .on_press(Message::GoToPage(Step::Main))
             .width(Length::Fill),]
         .width(Length::Shrink)

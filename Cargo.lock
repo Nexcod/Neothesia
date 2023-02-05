@@ -1360,7 +1360,7 @@ checksum = "9a3a5bfb195931eeb336b2a7b4d761daec841b97f947d34394601737a7bba5e4"
 [[package]]
 name = "iced_core"
 version = "0.6.1"
-source = "git+https://github.com/iced-rs/iced.git?rev=da244ff8048e0b339c1502372894a2460a637241#da244ff8048e0b339c1502372894a2460a637241"
+source = "git+https://github.com/Nexcod/iced.git?rev=8957d076559a3891b82ca0ffe44744d7a767208a#8957d076559a3891b82ca0ffe44744d7a767208a"
 dependencies = [
  "bitflags",
  "palette",
@@ -1370,7 +1370,7 @@ dependencies = [
 [[package]]
 name = "iced_futures"
 version = "0.5.1"
-source = "git+https://github.com/iced-rs/iced.git?rev=da244ff8048e0b339c1502372894a2460a637241#da244ff8048e0b339c1502372894a2460a637241"
+source = "git+https://github.com/Nexcod/iced.git?rev=8957d076559a3891b82ca0ffe44744d7a767208a#8957d076559a3891b82ca0ffe44744d7a767208a"
 dependencies = [
  "futures",
  "log",
@@ -1381,7 +1381,7 @@ dependencies = [
 [[package]]
 name = "iced_graphics"
 version = "0.4.0"
-source = "git+https://github.com/iced-rs/iced.git?rev=da244ff8048e0b339c1502372894a2460a637241#da244ff8048e0b339c1502372894a2460a637241"
+source = "git+https://github.com/Nexcod/iced.git?rev=8957d076559a3891b82ca0ffe44744d7a767208a#8957d076559a3891b82ca0ffe44744d7a767208a"
 dependencies = [
  "bitflags",
  "bytemuck",
@@ -1398,7 +1398,7 @@ dependencies = [
 [[package]]
 name = "iced_native"
 version = "0.6.1"
-source = "git+https://github.com/iced-rs/iced.git?rev=da244ff8048e0b339c1502372894a2460a637241#da244ff8048e0b339c1502372894a2460a637241"
+source = "git+https://github.com/Nexcod/iced.git?rev=8957d076559a3891b82ca0ffe44744d7a767208a#8957d076559a3891b82ca0ffe44744d7a767208a"
 dependencies = [
  "iced_core",
  "iced_futures",
@@ -1411,7 +1411,7 @@ dependencies = [
 [[package]]
 name = "iced_style"
 version = "0.5.0"
-source = "git+https://github.com/iced-rs/iced.git?rev=da244ff8048e0b339c1502372894a2460a637241#da244ff8048e0b339c1502372894a2460a637241"
+source = "git+https://github.com/Nexcod/iced.git?rev=8957d076559a3891b82ca0ffe44744d7a767208a#8957d076559a3891b82ca0ffe44744d7a767208a"
 dependencies = [
  "iced_core",
  "once_cell",
@@ -1421,7 +1421,7 @@ dependencies = [
 [[package]]
 name = "iced_wgpu"
 version = "0.6.1"
-source = "git+https://github.com/iced-rs/iced.git?rev=da244ff8048e0b339c1502372894a2460a637241#da244ff8048e0b339c1502372894a2460a637241"
+source = "git+https://github.com/Nexcod/iced.git?rev=8957d076559a3891b82ca0ffe44744d7a767208a#8957d076559a3891b82ca0ffe44744d7a767208a"
 dependencies = [
  "bitflags",
  "bytemuck",
